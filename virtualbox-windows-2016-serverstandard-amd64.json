@@ -19,7 +19,7 @@
     "headless": true,
     "guest_additions_mode":"disable",
     "floppy_files": [
-      "./windows/windows-2016-serverstandard-amd64/autounattend.xml",
+      "./windows/windows-2016-serverstandard-amd64/Autounattend.xml",
       "./windows/windows-2016-serverstandard-amd64/sysprep-unattend.xml",
       "./windows/common/variables.ps1",
       "./windows/common/set-power-config.ps1",
@@ -33,10 +33,10 @@
       "./windows/common/fixnetwork.ps1",
 	  "./windows/common/elevate.exe",
 	  "./windows/common/sdelete.exe",
-	  "./windows/common/sdelete.ps1",	  
+	  "./windows/common/sdelete.ps1",
       "./windows/common/Set-ClientWSUSSetting.ps1",
 	  "./windows/common/Set-ClientWSUSSetting.task.ps1"
-    ],    
+    ],
     "http_directory": "./windows/common/http/",
     "iso_url": "{{user `iso_url`}}",
     "iso_checksum_type": "{{user `iso_checksum_type`}}",
@@ -45,7 +45,7 @@
     "winrm_username": "{{user `username`}}",
     "winrm_password": "{{user `password`}}",
     "winrm_timeout": "4h",
-    "shutdown_command": "a:\\run-sysprep.cmd",   
+    "shutdown_command": "a:\\run-sysprep.cmd",
     "guest_os_type": "Windows2012_64",
     "vboxmanage": [
       [
